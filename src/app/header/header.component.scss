@@ -1,0 +1,61 @@
+.header-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #ff69b4, #ff1493);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    align-items: center;
+
+    strong {
+      margin-left: 0.3rem;
+    }
+  }
+
+  .spacer {
+    flex: 1;
+  }
+
+  .header-buttons {
+    display: flex;
+    gap: 1rem;
+
+    button {
+      background: linear-gradient(45deg, #d6336c, #8e24aa);
+      border: none;
+      color: white;
+      font-weight: 600;
+      padding: 0.5rem 1.2rem;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 3px 10px rgba(214, 51, 108, 0.6);
+      transition: all 0.3s ease;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      &:hover {
+        background: linear-gradient(45deg, #8e24aa, #d6336c);
+        box-shadow: 0 5px 15px rgba(142, 36, 170, 0.8);
+        transform: scale(1.05);
+      }
+
+      &:active {
+        transform: scale(0.95);
+        box-shadow: 0 2px 8px rgba(214, 51, 108, 0.9);
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+}

@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  app-root {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 100vh;
+  }
+  
+  router-outlet {
+    flex-grow: 1;
+  }
+  
+  footer {
+    margin-top: auto;
+    background: #1e1e2f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  

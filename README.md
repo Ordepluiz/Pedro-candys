@@ -1,59 +1,89 @@
-# PedroCandys
+# 🍬 Pedro Candys
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
+**Pedro Candys** é uma loja fictícia de brigadeiros desenvolvida em Angular, com um layout sofisticado, animações suaves e foco em uma experiência visual atrativa para o usuário. O projeto permite visualização de produtos, login e gerenciamento de um carrinho de compras.
 
-## Development server
+## 🚀 Tecnologias Utilizadas
 
-To start a local development server, run:
+* **Angular (standalone components)**
+* **Angular Material** – interface moderna e responsiva
+* **Bootstrap** – auxílio em responsividade
+* **SCSS** – para estilizações personalizadas e refinadas
+* **Reactive Forms** – para validações no formulário de login
+* **Google Fonts** – fonte `Poppins` para tipografia elegante
 
-```bash
-ng serve
-```
+## 📸 Funcionalidades
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+* Exibição de produtos com animações e botões de adicionar ao carrinho
+* Página de login com validações reativas e botão de visualização de senha
+* Página de carrinho com integração a produtos
+* Layout com cabeçalho fixo, footer estilizado e cores vibrantes
+* Transições suaves e responsividade aprimorada
 
-## Code scaffolding
+## 📦 Instalação e Execução
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+Após clonar este repositório:
 
 ```bash
-ng build
+git clone https://github.com/seu-usuario/pedro-candys.git
+cd pedro-candys
+npm install
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
+## 🧱 Bibliotecas e Dependências
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Instale as seguintes dependências se necessário:
+
+### Angular Material
 
 ```bash
-ng test
+ng add @angular/material
 ```
 
-## Running end-to-end tests
+Inclui os módulos usados:
 
-For end-to-end (e2e) testing, run:
+* `MatToolbarModule`
+* `MatFormFieldModule`
+* `MatInputModule`
+* `MatButtonModule`
+* `MatIconModule`
+* `MatCardModule`
+
+### Bootstrap
 
 ```bash
-ng e2e
+npm install bootstrap
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+E adicione no `angular.json`:
 
-## Additional Resources
+```json
+"styles": [
+  "node_modules/bootstrap/dist/css/bootstrap.min.css",
+  "src/styles.scss"
+]
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Google Fonts
+
+Adicione no `index.html`:
+
+```html
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+```
+
+---
+
+## 🛠️ Configurações recomendadas
+
+### SCSS como padrão
+
+Caso não tenha configurado SCSS por padrão:
+
+```bash
+ng config schematics.@schematics/angular:component.style scss
+```
+
+---
+
+

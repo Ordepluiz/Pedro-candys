@@ -1,0 +1,42 @@
+.produto-card {
+  background-color: #1e1e2f;
+  color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 220px;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  img {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  h3, p {
+    margin-left: 1rem;
+  }
+
+  button {
+    margin: 0 auto 1rem;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(to right, #ff69b4, #ff1493);
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: linear-gradient(to right, #ff1493, #ff69b4);
+    }
+  }
+}

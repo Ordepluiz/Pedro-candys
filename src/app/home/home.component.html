@@ -1,0 +1,8 @@
+<div class="produtos-container">
+  <app-produto-card 
+    *ngFor="let produto of produtos; let i = index"
+    [produto]="produto"
+    (adicionar)="onAdicionarCarrinho($event)"
+    [@fadeInStagger]="i">
+  </app-produto-card>
+</div>
